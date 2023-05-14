@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+
+        /* Main div css */
+
+        .main
+        {
+            background-color: aqua;
+        }
+
+        /* logo css */
+
+        .logo img
+        {
+            /* float: left; */
+            height: 4%;
+            width: 4%;
+            background-color: aqua;
+        }
+
+        /* content css */
+
+        .content
+        {
+            float: right;
+            height: 10px;
+        }
+
+        .content a
+        {
+            margin: 5px;
+            padding: 10px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+
+        
+        }
+
+        /* Drop down css */
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* Main dropdown css */
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: aqua;
+        top: 105%;
+        left: 15%;
+        min-width: 120px;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: inline-block;
+      }
+      
+      /* Sub Menu or dropdown css */
+
+      .sub-dropdown-content {
+        display: none;
+        position: absolute;
+        top: 80%;
+        left: 100%;
+        background-color: aqua;
+        min-width: 120px;
+      }
+      
+      .sub-dropdown:hover .sub-dropdown-content {
+        display: block;
+      }
+
+      /* End Drop down css */
+
+      /* Login button css */
+
+      .login
+      {
+        position: relative;
+        height: 251%;
+        text-align: center;
+        width: 20%;
+        top: 17%;
+      }
+
+      /* Drop down btn css*/
+      .dropdown .dropbtn
+       {
+        border: none;
+        background-color: inherit;
+        outline: none;
+        color: black;
+
+        }
+    
+    </style>
+</head>
+<body>
+<!-- Main div start -->
+
+ <div class="main">   
+    <!-- Navbar logo -->
+
+    <div class="logo">
+        <img src="LJ.png" alt="">
+    
+
+    <!-- Navbar content -->
+
+    <div class="content">
+
+        <a href="home">Home</a>
+        <a href="about">About</a>
+
+        <!-- Drop down -->
+
+        <div class="dropdown">
+            
+            <button class="dropbtn">SERVICES 
+                <i class="fa fa-caret-down"></i>
+            </button>
+
+            <!-- Drop down content -->
+
+            <div class="dropdown-content">
+              <div class="sub-dropdown">
+                <span>Web Design</span>
+              </div>
+              <div class="sub-dropdown">
+                <span>Marketing</span>
+              </div>
+              <div class="sub-dropdown">
+                <span>Wordpress</span>
+              </div>
+
+              <!-- Sub drop down -->
+
+              <div class="sub-dropdown">
+
+                <button class="dropbtn">More 
+                    <i class="fa fa-caret-right"></i>
+                </button>
+              <!-- Sub drop down content -->
+
+                <div class="sub-dropdown-content">
+                  <span>Html</span>
+                  <br>
+                  <span>CSS</span>
+                  <br>
+                  <span>Java Script</span>
+                  <br>
+                  <span>Jquery</span>
+                </div>
+
+              <!-- Sub drop down content end -->
+
+              </div>
+
+              <!-- Sub drop down end -->
+
+            </div>
+
+              <!-- Drop down content end -->
+        
+          </div>
+          <!-- Drop down end -->
+
+          <a href="bolgs">Blogs</a>
+          <button class="login"><a href="login">Login</a></button>
+    </div>
+
+    <!-- Nav bar content end -->
+
+</div>
+
+<!-- Main div end -->
+</body>
+</html>
